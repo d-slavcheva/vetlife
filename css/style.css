@@ -2,7 +2,7 @@
 
 body {
   overflow-x: hidden;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #666;
 }
 
@@ -11,14 +11,20 @@ a {
   color: #666;
 }
 
+li {
+  list-style-type: none;
+}
+
 /*-- Top-bar --*/
 
 .top-bar {
   min-height: 60px;
+  padding: 1.2rem auto;
 }
 
 .address-item {
   position: relative;
+  margin: 1rem;
 }
 
 .address-item .svg-inline--fa {
@@ -44,30 +50,36 @@ a {
   font-weight: 600;
 }
 
-/*-- nav-bar --*/
+/*-- nav-bar*/
+
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.navbar-toggler {
+  border: none;
+}
 
 .main-nav {
-  width: 100%;
-  background: rgb(119, 191, 188);
-    padding: 0;
+  background-color: rgb(119, 191, 188)!Important;
 }
 
-.nav-item a {
-  color: white;
-  padding: 1rem;
-  margin: 0 auto;
+.main-nav a {
+  color: rgb(255, 255, 255)!Important;
+  margin: .6rem 1rem;
   text-transform: uppercase;
- }
-
- .nav-item active, .nav-item a:hover{
-  font-weight: 500;
-  background: rgb(79, 166, 161);
 }
 
-.main-nav .social {
-  color: white;
-  display: flex;
-  list-style: none;
+.active, .menu li:hover {
+  background-color: rgb(79, 166, 161);
+}
+
+.social .svg-inline--fa {
+  font-size: 1.3rem;
+}
+.social a{
+  margin: auto 0.5rem;
 }
 
 /*============ BOOTSTRAP BREAK POINTS:
