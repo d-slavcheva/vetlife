@@ -5,6 +5,10 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: #666;
 }
+h2, h3, h5{
+  font-family: 'Raleway', sans-serif;
+  color: #3c3c3c;
+}
 
 a {
   text-decoration: none;
@@ -26,6 +30,9 @@ li {
   list-style-type: none;
 }
 
+.text-g{
+  color:rgb(79, 166, 161);
+}
 /*-- Top-bar --*/
 
 .address-item {
@@ -99,6 +106,42 @@ li {
 .carousel-caption>h2{
   font-size: 3rem;
 }
+
+/*-- FIXED BACKGROUND IMG--*/
+
+.fixed {
+  background-image: url('../img/gallery/paralax.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 100%;
+  height: 300px;
+  background-repeat: no-repeat;
+}
+/*-- 3section colomn--*/
+
+.cell{
+  position: relative;
+  margin-left: 5rem;
+}
+.icons{
+  font-size: 4rem;
+  position: absolute;
+ 
+}
+.icons:hover{
+  color:#3c3c3c; ;
+  font-size: 4.5rem;
+  transition: ease-in-out .5s;
+ 
+}
+.cell p{
+  line-height: 2rem;
+}
+.cell h5:hover{
+  color:rgb(119, 191, 188);
+}
+
+
 
 @media (max-width: 992px) {
   .social {
