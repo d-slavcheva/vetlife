@@ -17,14 +17,9 @@ li {
 
 /*-- Top-bar --*/
 
-.top-bar {
-  min-height: 60px;
-  padding: 1.2rem auto;
-}
-
 .address-item {
   position: relative;
-  margin: 1rem;
+  margin-left: 1rem;
 }
 
 .address-item .svg-inline--fa {
@@ -37,7 +32,7 @@ li {
 
 .address-item p, .address-item a {
   margin: 0;
-  padding: 0 2.2rem;
+  padding-left: 2.2rem;
 }
 
 .address-item a:hover {
@@ -50,11 +45,9 @@ li {
   font-weight: 600;
 }
 
-/*-- nav-bar*/
-
-.navbar {
-  padding-top: 0;
-  padding-bottom: 0;
+-- nav-bar--
+.container {
+border: black solid 1px;
 }
 
 .navbar-toggler {
@@ -63,11 +56,13 @@ li {
 
 .main-nav {
   background-color: rgb(119, 191, 188)!Important;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
-.main-nav a {
+.nav-link {
+  padding: 1rem 1.2rem!Important;
   color: rgb(255, 255, 255)!Important;
-  margin: .6rem 1rem;
   text-transform: uppercase;
 }
 
@@ -78,11 +73,27 @@ li {
 .social .svg-inline--fa {
   font-size: 1.3rem;
 }
-.social a{
-  margin: auto 0.5rem;
+/*-- End nav-bar--*/
+
+/*-- Carousel--*/
+.carousel-caption {
+  position: absolute;
+  top: 54%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  
+}
+.carousel-caption>h2{
+  font-size: 3rem;
+
 }
 
-/*============ BOOTSTRAP BREAK POINTS:
+@media (max-width: 992px) {
+  .social {
+    display: none;
+  }
+  
+  /*============ BOOTSTRAP BREAK POINTS:
 
 Extra small (xs) devices (portrait phones, less than 576px)
 No media query since this is the default in Bootstrap
