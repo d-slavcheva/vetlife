@@ -85,8 +85,16 @@ border: black solid 1px;
 }
 .carousel-caption>h2{
   font-size: 3rem;
-
 }
+.carousel-caption a{
+  color:rgb(79, 166, 161);
+  border-color: rgb(79, 166, 161);
+}
+
+.carousel-caption a:hover{
+background-color: rgb(119, 191, 188);
+}
+
 
 @media (max-width: 992px) {
   .social {
