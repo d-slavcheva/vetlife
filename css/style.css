@@ -11,6 +11,17 @@ a {
   color: #666;
 }
 
+.btn-g {
+  color:rgb(79, 166, 161);
+  border-color: rgb(79, 166, 161);
+  padding: 0.5rem 2rem;
+  border-radius: 0;
+}
+.btn-g:hover{
+  color:white;
+  background-color: rgb(119, 191, 188);
+  }
+
 li {
   list-style-type: none;
 }
@@ -19,8 +30,10 @@ li {
 
 .address-item {
   position: relative;
-  margin-left: 1rem;
-}
+  margin-left: 4.5rem;
+ }
+
+
 
 .address-item .svg-inline--fa {
   display: block;
@@ -45,9 +58,9 @@ li {
   font-weight: 600;
 }
 
--- nav-bar--
+/* -- nav-bar-- */
 .container {
-border: black solid 1px;
+/* border: black solid 1px; */
 }
 
 .navbar-toggler {
@@ -86,15 +99,6 @@ border: black solid 1px;
 .carousel-caption>h2{
   font-size: 3rem;
 }
-.carousel-caption a{
-  color:rgb(79, 166, 161);
-  border-color: rgb(79, 166, 161);
-}
-
-.carousel-caption a:hover{
-background-color: rgb(119, 191, 188);
-}
-
 
 @media (max-width: 992px) {
   .social {
