@@ -140,12 +140,12 @@ li {
   background-attachment: fixed;
   background-size: 100%;
   height: 300px;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
 }
 
 .overlay {
   background-color: rgba(69, 166, 160, 0.85);
-  width: 100%;
+  /* width: 100%; */
   height: 100%;
   z-index: 2;
 }
@@ -177,15 +177,44 @@ li {
   color: rgb(119, 191, 188);
 }
 
+/*-- Gallery--*/
+
+.item {
+  overflow: hidden;
+  margin-bottom: 0;
+  background: rgba(69, 166, 160, 0.85);
+  position: relative;
+}
+
+.description {
+  display: grid;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  width: 100%;
+  opacity: 1;
+  transition: 0.8s ease;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.39));
+}
+
+.image {
+  transition: 0.8s ease;
+ }
+
 /*-- Pricing--*/
 
 .card-header {
   background-color: rgb(79, 166, 161);
   color: white;
 }
+
 input, textarea:focus {
   outline: none;
 }
+
 footer {
   background-color: #3C3C3C;
   color: rgb(186, 235, 233);
@@ -206,7 +235,22 @@ footer a:hover {
   .social {
     display: none;
   }
-  /*============ BOOTSTRAP BREAK POINTS:
+}
+
+@media (min-width: 576px) {
+  .gallery-block.compact-gallery .item .description {
+    opacity: 0;
+  }
+  .gallery-block.compact-gallery .item a:hover .description {
+    opacity: 1;
+  }
+  .gallery-block .zoom-on-hover:hover .image {
+    transform: scale(1.3);
+    opacity: 0.7;
+  }
+}
+
+/*============ BOOTSTRAP BREAK POINTS:
 
 Extra small (xs) devices (portrait phones, less than 576px)
 No media query since this is the default in Bootstrap
