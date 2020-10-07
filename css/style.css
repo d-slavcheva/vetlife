@@ -32,7 +32,7 @@ a {
   background-color: rgb(119, 191, 188);
 }
 
-.btt {
+.homebutton {
   background-color: rgba(209, 209, 209, 0.9);
   color: white;
   padding: 0 1rem;
@@ -40,6 +40,7 @@ a {
   bottom: 0.8rem;
   right: 0.8rem;
   border-radius: none;
+  z-index: 1;
 }
 
 li {
@@ -139,15 +140,22 @@ li {
   background-position: center;
   background-attachment: fixed;
   background-size: 100%;
-  height: 300px;
   background-repeat: repeat-y;
-}
+  max-width: 100%;
+  height: auto;
+  }
 
 .overlay {
   background-color: rgba(69, 166, 160, 0.85);
-  /* width: 100%; */
+  width: 100%;
   height: 100%;
   z-index: 2;
+}
+.counter {
+  background-color:#f5f5f5;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
 }
 
 /*-- Three section colomn--*/
@@ -181,23 +189,24 @@ li {
 
 .item {
   overflow: hidden;
-  margin-bottom: 0;
-  background: rgba(69, 166, 160, 0.85);
+  margin:0;
+  background: rgba(79, 166, 161, 0.9);
+  color: #fff;
   position: relative;
 }
 
 .description {
-  display: grid;
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
+  padding: 10%;
   color: #fff;
   width: 100%;
   opacity: 1;
   transition: 0.8s ease;
   text-align: center;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.39));
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.3));
 }
 
 .image {
