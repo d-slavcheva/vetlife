@@ -237,6 +237,12 @@ footer a:hover {
   color: rgb(79, 166, 161);
   text-decoration: none;
  }
+/*-- Review section--*/
+.review{
+  background-image: url('../img/testimonials-bg.png');
+}
+
+
 
 @media (max-width: 992px) {
   .social {
