@@ -86,9 +86,9 @@ li {
 
 /* -- nav-bar-- */
 
-.container {
-  /* border: black solid 1px; */
-}
+/*.container {
+   border: black solid 1px; 
+}*/
 
 .navbar-toggler {
   border: none;
@@ -136,13 +136,13 @@ a.nav-link.active, .menu li:hover {
   border-radius: 50%;
 }
 
-/*-- FIXED BACKGROUND IMG--*/
+/*-- FIXED section BACKGROUND IMG--*/
 
 .fixed {
   background-image: url('../img/paralax.jpg');
   background-position: center;
   background-attachment: fixed;
-   }
+ }
 
 .overlay {
   background-color: rgba(79, 166, 161, 0.85);
@@ -249,11 +249,13 @@ p.blockquote-footer{
   .social {
     display: none;
   }
-}
+  
+  }
 @media (max-width: 576px) {
   .top-bar{
     display: none;
   }
+
 }
 @media (min-width: 576px) {
   h2{

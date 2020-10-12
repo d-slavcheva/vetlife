@@ -22,10 +22,10 @@
 <body>
 
 	<!-- Top Bar -->
-	<div class="top-bar navbar my-3">
+	<div class="top-bar navbar">
 		<div class="container pl-0">
-			<div class="col-lg-4 col-md-12">
-				<img src="img/logo.png" alt="">
+			<div class="col-lg-4 row justify-content-center">
+				<img src="img/VetLifeLogoVar1.png" alt="">
 			</div>
 			<div class="col-lg-8 col-md-12 row address-info">
 				<div class="address-item">
@@ -58,10 +58,10 @@
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav menu">
 					<li class="nav-item active"><a href="index.html" class="nav-link active">Home</a></li>
-					<li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+					<li class="nav-item"><a href="#blog" class="nav-link">Blog</a></li>
 					<li class="nav-item"><a href="#" class="nav-link">Pages</a></li>
-					<li class="nav-item"><a href="#" class="nav-link">Photos</a></li>
-					<li class="nav-item"><a href="#" class="nav-link">Contacts</a></li>
+					<li class="nav-item"><a href="#gallery" class="nav-link">Photos</a></li>
+					<li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
 				</ul>
 			</div>
 			<ul class="navbar-nav social">
@@ -76,7 +76,7 @@
 	<!-- End Navigation -->
 
 	<!-- Carousel -->
-	<div id="carouselExampleCaptions" class="carousel slide" data-interval="4000" data-ride="carousel">
+	<div id="carouselExampleCaptions" class="carousel slide mb-3" data-interval="4000" data-ride="carousel">
 		<ol class="carousel-indicators">
 			<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
 			<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -189,7 +189,7 @@
 
 
 	<!-- End Three columns section -->
-	<section class="container py-5 my-5">
+	<section class="container my-5">
 		<div class="row">
 			<div class="col-sm-12 text-center align-items-center">
 				<h2>Our <span class="font-weight-bolder">Services & Procedures</span></h2>
@@ -252,8 +252,8 @@
 	<!-- End threecol section -->
 
 	<!-- Gallery -->
-	<section class="gallery-block compact-gallery my-5">
-		<div class="heading text-center">
+	<section class="gallery-block compact-gallery my-5" id="gallery">
+		<div class="heading bg-light text-center py-3">
 			<h2>Our <span class="font-weight-bolder">Gallery</span></h2>
 			<p class="text-g">COMPASSIONATE AND HIGH QUALITY CARE</p>
 			<hr class="w-25">
@@ -427,8 +427,8 @@
 	<!-- End three columns section -->
 
 	<!-- Review section -->
-	<div class="review">
-		<div class="overlay my-5">
+	<div class="review my-5">
+		<div class="overlay">
 			<div class="container">
 				<div class="col-sm-12 text-center align-items-center pt-5">
 					<h2 class="text-light">What <span class="font-weight-bolder">Clients Say</span></h2>
@@ -476,7 +476,7 @@
 	<!-- End review section -->
 
 	<!-- Blog section -->
-	<section class="container">
+	<section class="container" id="blog">
 		<div class="row">
 			<div class="col-sm-12 text-center align-items-center">
 				<h2>Recent <span class="font-weight-bolder">Posts</span></h2>
@@ -530,14 +530,14 @@
 
 
 	<!-- Contact section -->
-	<div class="container">
-		<div class="col-sm-12 text-center align-items-center my-3">
+	<div class="container my-5" id="contacts">
+		<div class="col-sm-12 text-center align-items-center py-2 bg-light">
 			<h2>Contact <span class="font-weight-bolder">Us</span></h2>
 			<p class="text-g text-uppercase">We are here to assist you</p>
 			<hr class="w-25">
 		</div>
 		<div class="row">
-			<div class="map col-lg-6">
+			<div class="map col-lg-6 px-0">
 				<iframe
 					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9994.334178242867!2d6.779530642321017!3d51.22674702343833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8ca25a6a8adb3%3A0x9211fe853cc31fb4!2sStadtmitte%2C%20D%C3%BCsseldorf!5e0!3m2!1sde!2sde!4v1600854785972!5m2!1sde!2sde"
 					width="100%" height="650px" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -563,7 +563,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-3 col-md-6 my-3">
-					<img src="img/logo.png" alt="">
+					<img src="img/VetLifeLogoVar2.png" alt="">
 					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor, at.</p>
 					<ul class="social row ">
 						<li class="px-2"><a href="" target="_blank"><i
