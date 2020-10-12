@@ -215,9 +215,12 @@ a.nav-link.active, .menu li:hover {
 }
 
 /*-- Pricing--*/
+.card{
+  border-radius: 0;
+}
 
 .card-header {
-  background-color: rgb(79, 166, 161);
+  background-color: #77bfbc;
   color: white;
 }
 
@@ -247,6 +250,14 @@ footer a:hover {
 
 p.blockquote-footer {
   background-color: none;
+  color: white;
+}
+
+/* FAQ */
+
+#FAQ button {
+  box-shadow: none;
+  border-radius: 0;
   color: white;
 }
 
