@@ -22,7 +22,7 @@ a {
 
 .btn-g {
   color: rgb(79, 166, 161);
-  border-color: rgb(79, 166, 161);
+  border-color: rggb(79, 166, 161);
   padding: 0.5rem 2rem;
   border-radius: 0;
 }
@@ -217,7 +217,10 @@ a.nav-link.active, .menu li:hover {
 .image {
   transition: 0.8s ease;
 }
-
+/*-- Blog--*/
+.card-img-top{
+  border-radius: 0;
+}
 /*-- Pricing--*/
 .card{
   border-radius: 0;
