@@ -32,7 +32,10 @@ a {
   background-color: rgb(119, 191, 188);
 }
 
-.homebutton {
+#homebutton {
+  display: none;
+  border: none;
+  outline: none;
   background-color: rgba(119, 191, 188, 0.9);
   color: white;
   padding: 0 1rem;
@@ -43,7 +46,8 @@ a {
   z-index: 1;
 }
 
-.homebutton:hover {
+#homebutton:hover {
+  background-color: rgb(79, 166, 161);
   color: white;
 }
 
@@ -222,6 +226,7 @@ a.nav-link.active, .menu li:hover {
 .card-header {
   background-color: #77bfbc;
   color: white;
+  border-radius: 0!important;
 }
 
 input, textarea:focus {
